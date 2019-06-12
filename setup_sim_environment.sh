@@ -15,4 +15,4 @@ apt -y install ros-melodic-geographic-msgs
 apt -y install ros-melodic-geodesy
 apt -y install ros-melodic-pid
 apt -y install ros-melodic-joy
-
+apt install python-gdal

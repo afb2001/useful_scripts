@@ -20,3 +20,7 @@ git clone https://github.com/afb2001/kongsberg_em_control.git
 git clone https://github.com/afb2001/geographic_visualization_msgs.git
 git clone https://github.com/afb2001/joy_to_helm.git
 git clone https://github.com/afb2001/hover.git
+
+git clone https://githib.com/afb2001/path_planner.git
+git clone https://github.com/afb2001/mpc.git
+
