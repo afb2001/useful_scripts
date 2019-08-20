@@ -25,4 +25,5 @@ git clone https://github.com/afb2001/hover.git
 git clone https://githib.com/afb2001/path_planner.git
 git clone https://github.com/afb2001/mpc.git
 git clone https://github.com/afb2001/RobustDubins.git
+git clone https://github.com/afb2001/test_scenario_runner.git
 
