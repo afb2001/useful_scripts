@@ -11,8 +11,12 @@ cd ~/project11/catkin_ws
 catkin_make
 echo "source ~/project11/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-apt -y install ros-melodic-geographic-msgs
-apt -y install ros-melodic-geodesy
-apt -y install ros-melodic-pid
-apt -y install ros-melodic-joy
-apt install python-gdal
+
+git clone https://github.com/leggedrobotics/darknet_ros.git
+touch darknet_ros/darknet_ros/CATKIN_IGNORE
+
+sudo apt -y install ros-melodic-geographic-msgs
+sudo apt -y install ros-melodic-geodesy
+sudo apt -y install ros-melodic-pid
+sudo apt -y install ros-melodic-joy
+sudo apt install python-gdal
