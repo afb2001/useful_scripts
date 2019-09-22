@@ -16,6 +16,7 @@ kongsberg_em_control
 geographic_visualization_msgs
 joy_to_helm
 hover
+course_made_good
 )
 
 for i in "${names[@]}"
