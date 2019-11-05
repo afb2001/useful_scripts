@@ -4,9 +4,9 @@ asv_helm
 asv_sim
 axis_tracker
 br24_radar
-camp
 command_bridge
 course_made_good
+darknet_ros
 dubins_curves
 echo_helm
 flir
@@ -20,7 +20,9 @@ marine_msgs
 mbes_sim
 mbr
 mission_manager
+mpc
 path_follower
+path_planner
 posmv
 project11
 project11_transformations
@@ -33,14 +35,19 @@ udp_bridge
 zboat_helm
 )
 
-# excluded my repos
+add_downstream() {
+	git remote add alex https://github.com/afb2001/$1.git
+}
 
 for i in "${names[@]}"
 do
 	cd $i
-	git fetch origin
-	git merge origin/master
+	add_downstream $i
 	cd ..
 done
+
+cd camp
+add_downstream AutonomousMissonPlanner
+cd ..
 
 
