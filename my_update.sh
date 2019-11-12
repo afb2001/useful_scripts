@@ -11,8 +11,8 @@ do
 	git fetch alex
 	git checkout master
 	git merge alex/master
-	git merge alex/dev
 	git checkout dev
+	git merge alex/dev
 	cd ..
 done
 
