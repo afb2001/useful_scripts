@@ -1,26 +1,12 @@
 #!/bin/bash
-echo "Warning! Out of date!"
 
+cd ~
 
-# mkdir -p ~/project11/catkin_ws/src
-# mkdir -p ~/project11/log/moos
-# mkdir -p ~/project11/log/nodes
-# mkdir -p ~/project11/executed_missions
-# mv ~/.ros ~/project11/ros
-# ln -s ~/project11/ros ~/.ros
-# ln -s ~/project11/log/nodes ~/project11/ros/nodes
-# ln -s ~/project11/log/moos ~/project11/ros/moos
-# cd ~/project11/catkin_ws
-# catkin_make
-# echo "source ~/project11/catkin_ws/devel/setup.bash" >> ~/.bashrc
-# source ~/.bashrc
-# 
-# cd src 
-# touch darknet_ros/darknet_ros/CATKIN_IGNORE
-# cd ..
-# 
-# sudo apt -y install ros-melodic-geographic-msgs
-# sudo apt -y install ros-melodic-geodesy
-# sudo apt -y install ros-melodic-pid
-# sudo apt -y install ros-melodic-joy
-# sudo apt install python-gdal
+# Clone project11
+git clone --recursive https://github.com/CCOMJHC/project11.git
+
+# Install additional dependencies
+sudo apt -y install ros-melodic-geographic-msgs ros-melodic-geodesy ros-melodic-pid ros-melodic-joy ros-melodic-mavros ros-melodic-rosmon python-gdal qtpositioning5-dev libqt5svg5-dev libgeos++-dev
+
+cd -
+
