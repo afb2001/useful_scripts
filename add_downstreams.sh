@@ -6,7 +6,6 @@ axis_tracker
 br24_radar
 command_bridge
 course_made_good
-darknet_ros
 dubins_curves
 echo_helm
 flir
